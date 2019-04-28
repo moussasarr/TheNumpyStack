@@ -13,10 +13,16 @@ for i in range(25):
 	Vprime  = V.dot(A)
 	Veucl.append(np.linalg.norm(Vprime - V))
 	V = Vprime
-	i += 1
+
 
 #Plotting euclidean distance |V' - V| as a function of each iteration
 plt.plot(Veucl)
 plt.show()
 
-
+# Plotting |V' - V| 
+# We realize that |V' -V| tends to 0
+# Meaning that V' = V = AV
+# So V = AV
+# This infers that V is an eigenVector of A for the corresponding 
+# eigenValue of 1
+# Meaning the vector V transforms unit vector of A unchanged.
