@@ -12,4 +12,3 @@ for i in range(10000):
     Y.append(M)
 plt.hist(Y, bins=20)
 plt.show()
-print("Done Computing :)")
