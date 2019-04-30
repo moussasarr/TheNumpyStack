@@ -12,10 +12,9 @@ data = mnist_set.values
 images = data[:, 1:]
 labels = data[:, 0]
 
-for i in range(9):
+for i in range(10):
 	IMi = images[labels == i]
 	Mean = IMi.mean(axis=0)
-	print(Mean.shape)
 	im = Mean.reshape(28, 28)
 	plt.imshow(im, cmap='gray')
 	plt.show()
